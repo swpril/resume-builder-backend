@@ -2,10 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const pdf = require('html-pdf');
-const path = require('path');
 
 const app = express();
-
+const pdfTemplate = require('./documents')
 const port = process.env.PORT || 4000;
 
 app.use(cors());
